@@ -5,6 +5,9 @@
   tasks:
   - name: Create a credential type
     ansible.controller.credential_type:
+      controller_host: "{{ controller_host }}"
+      controller_password: "{{ password }}"
+      controller_username: "{{ username }}"
       name: Test creds
       description: Testing credentials from case 03330413
       kind: cloud
