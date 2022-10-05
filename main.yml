@@ -22,6 +22,7 @@
       controller_password: "{{ password }}"
       controller_username: "{{ username }}"
       name: Case 03330413 creds - testing
+      organization: Default
       credential_type: Case 03330413 creds
       inputs:
         username: admin
