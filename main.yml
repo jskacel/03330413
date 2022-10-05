@@ -1,0 +1,14 @@
+---
+- name: Case 03330413 replication
+  hosts: localhost
+
+  tasks:
+  - name: Create a credential type
+    ansible.controller.credential_type:
+      name: Test creds
+      description: Testing credentials from case 03330413
+      kind: cloud
+      inputs: "{{ lookup('file', 'creds_input.yml') }}"
+      injectors: "{{ lookup('file', 'creds_injector.yml') }}"
+      state: present
+      validate_certs: false
