@@ -1,3 +1,6 @@
-extra_vars:
-  password: '{{ password }}'
-  username: '{{ username }}'
+{
+  "extra_vars": {
+    "password": "{{ password }}",
+    "username": "{{ username }}"
+  }
+}
