@@ -8,7 +8,7 @@
       name: Test creds
       description: Testing credentials from case 03330413
       kind: cloud
-      inputs: "{{ lookup('file', 'creds_input.json') | dict }}"
-      injectors: "{{ lookup('file', 'creds_injector.json') | dict }}"
+      inputs: "{{ lookup('file', 'creds_input.json') }}"
+      injectors: "{{ lookup('file', 'creds_injector.json') }}"
       state: present
       validate_certs: false
